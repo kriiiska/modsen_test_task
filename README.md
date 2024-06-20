@@ -1,2 +1,2 @@
 # modsen_test_task
-Test task while practice
+kriiiska.github.io/modsen_test_task/
