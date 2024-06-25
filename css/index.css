@@ -1,136 +1,138 @@
 /** 
-* ! style rules for sectionOne
+* ! style rules for headerBannerSection
 */
 
-.sectionOne__left--text{
+.headerBannerSection__left--text{
   font-family: var(--font-2);
   font-size: var(--body);
   color: var(--color-white-75);
 }
 
-.sectionOne__left--btn {
+.headerBannerSection__left--btn {
   align-self: start;
-  margin-top: 20px;
-  border-radius: 5px;
+  margin-top: var(--spacing-vertical-25);
 }
 
 /** 
-* ! style rules for sectionTwo
+* ! style rules for partnersSection
 */
 
-.sectionTwo {
-  padding: 50px 0;
+.partnersSection {
+  padding-top: var(--spacing-vertical-60);
+  padding-bottom: var(--spacing-vertical-73);
   display: grid;
-  gap: 30px;
+  gap: var(--spacing-vertical-55);
 }
 
-.sectionTwo__content--text {
+.partnersSection__content--text {
   font-family: var(--font-2);
   font-size: var(--sub);
 }
 
-.sectionTwo__logo {
+.partnersSection__logo {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.sectionTwo__logo img {
+.partnersSection__logo img {
   justify-self: center;
   align-self: center;
 }
 
-.sectionTwo__btn {
+.partnersSection__btn {
   justify-self: center;
 }
 
 /** 
-* ! style rules for sectionThree
+* ! style rules for primarySection
 */
 
-.sectionThree {
-  padding: 50px 0;
+.primarySection {
+  padding-bottom: var(--spacing-vertical-73);
+  padding-top: 0;
   display: grid;
-  gap: 110px;
+  gap: var(--spacing-horizontal-m);
 }
 
-.sectionThree__right--text {
+.primarySection__right--text {
   color: var(--color-dark-50);
   font-family: var(--font-2);
   font-size: var(--body);
 }
 
-.sectionThree__right--btn {
+.primarySection__right--btn {
   align-self: start;
-  margin-top: 20px;
+  margin-top: var(--spacing-vertical-16);
 }
 
 /** 
-* ! style rules for sectionFour
+* ! style rules for secondarySection
 */
 
-.sectionFour {
-  padding: 50px 0;
+.secondarySection {
+  /* padding: 50px 0; */
+  padding-top: 0;
+  padding-bottom: var(--spacing-vertical-73);
   display: grid;
-  gap: 110px;
+  gap: var(--spacing-horizontal-m);
 }
 
-.sectionFour__right--text {
+.secondarySection__right--text {
   color: var(--color-dark-50);
   font-family: var(--font-2);
   font-size: var(--body);
 }
 
-.sectionFour__right--btn {
+.secondarySection__right--btn {
   align-self: start;
-  margin-top: 20px;
+  margin-top: var(--spacing-vertical-16);
 }
 
 /** 
-* ! style rules for sectionFive
+* ! style rules for teamSection
 */
 
-.sectionFive {
+.teamSection {
   display: grid;
-  gap: 45px;
-  margin-top: 15px;
-  margin-bottom: 54px;
+  gap: var(--spacing-vertical-45);
+  margin-bottom: var(--spacing-vertical-54);
 }
 
-.sectionFive__cards {
+.teamSection__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 47px;
+  gap: var(--spacing-horizontal-s);
 }
 
-.sectionFive__content--text {
+.teamSection__content--text {
   font-family: var(--font-2);
   font-size: var(--sub);
 }
 
-.sectionFive__btn {
+.teamSection__btn {
   justify-self: center;
 }
 
 
-[class^="sectionFive__cards--"] {
+[class^="teamSection__cards--"] {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: var(--spacing-vertical-15);
   box-shadow: var(--shadow-1);
   border-radius: 5px;
   padding: 20px 25px;
 }
 
-[class^="sectionFive__cards--"] .name {
+[class^="teamSection__cards--"] .name {
   font-family: var(--font-1);
   font-size: var(--h4);
   font-weight: bold;
 }
 
-[class^="sectionFive__cards--"] .position {
+[class^="teamSection__cards--"] .position {
   font-family: var(--font-2);
   color: var(--color-dark-50);
-  font-size: 15px;
+  font-size: var(--h6);
   text-transform: uppercase;
 }
 
@@ -139,42 +141,43 @@
 * !media queries are here
 */
 @media (max-width: 1200px) {
-  .sectionTwo__logo {
+  .partnersSection__logo {
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: var(--spacing-vertical-30);
   }
 }
 
 
 @media (max-width: 768px) {
-  .sectionOne__right {
+  .headerBannerSection__right {
     order: 0;
   }
 
-  .sectionOne__left {
+  .headerBannerSection__left {
     order: 1;
   }
 
-  .sectionFour__right{
+  .secondarySection__right{
     order: 1;
   }
 
-  .sectionFour__left{
+  .secondarySection__left{
     order: 0;
   }
 
-  .sectionFive__cards {
+  .teamSection__cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 568px) {
-  .sectionTwo__logo {
+  .partnersSection__logo {
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
+    gap: var(--spacing-vertical-30);
   }
 
-  .sectionFive__cards {
-    grid-template-columns: repeat(1, 1fr);
+  .teamSection__cards {
+    grid-template-columns: repeat(1, 0.8fr);
+    justify-content: center;
   }
 }

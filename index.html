@@ -10,125 +10,121 @@
 </head>
 
 <body>
-  <div class="header">
-    <div class="navbar container">
+  <header class="header">
+    <nav class="navbar container">
       <div class="navbar__logo">
-        <img src="images/Logo/LogoWhite.svg" alt="" class="navbar__logo--image">
+        <img src="images/Logo/LogoWhite.svg" alt="Logo" class="navbar__logo--image">
         <div class="navbar__logo--text">Start</div>
       </div>
       <div class="navbar__menu hidden">
-        <a href="" class="navbar__menu--1">Home</a>
-        <a href="" class="navbar__menu--2">Portfolio</a>
-        <a href="" class="navbar__menu--3">Services</a>
-        <a href="" class="navbar__menu--4">Contact</a>
+        <a href="#" class="navbar__menu--1">Home</a>
+        <a href="#" class="navbar__menu--2">Portfolio</a>
+        <a href="#" class="navbar__menu--3">Services</a>
+        <a href="#" class="navbar__menu--4">Contact</a>
       </div>
-
-
       <div class="navbar__icons">
         <i class="bi bi-list"></i>
         <i class="bi bi-x-lg hide"></i>
       </div>
-
-    </div>
-
-    <div class="sectionOne grid container">
-      <div class="sectionOne__left flex">
-        <div class="sectionOne__left--label label text-white">welcome</div>
-        <div class="sectionOne__left--title common-title text-white">Lorem ipsum dolor sit amet consectetur</div>
-        <div class="sectionOne__left--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, molestias.
-           Sequi voluptates aliquam excepturi est dolorem possimus culpa esse accusantium. 
-           Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-        <button class="sectionOne__left--btn white-btn">Explore</button>
+    </nav>
+  
+    <section class="headerBannerSection grid container">
+      <div class="headerBannerSection__left flex">
+        <div class="headerBannerSection__left--label label text-white">headerBannerSection</div>
+        <h1 class="headerBannerSection__left--title common-title text-white">Lorem ipsum dolor sit amet consectetur</h1>
+        <p class="headerBannerSection__left--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, molestias.
+          Sequi voluptates aliquam excepturi est dolorem possimus culpa esse accusantium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="headerBannerSection__left--btn white-btn">Explore</button>
       </div>
-      <img src="images/Home/image-1.svg" alt="" class="sectionOne__right responsive-image">
+      <img src="images/Home/image-1.svg" alt="headerBannerSection banner" class="headerBannerSection__right responsive-image">
+    </section>
+  </header>
+  
+  <section class="partnersSection container">
+    <div class="partnersSection__content text-center flex">
+      <div class="partnersSection__content--label label text-green">partnersSection</div>
+      <h2 class="partnersSection__content--title common-title">Lorem ipsum dolor</h2>
+      <p class="partnersSection__content--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
     </div>
-  </div>
-
-  <div class="sectionTwo container">
-    <div class="sectionTwo__content text-center flex">
-      <div class="sectionTwo__content--label label text-green">partners</div>
-      <div class="sectionTwo__content--title common-title">Lorem ipsum dolor</div>
-      <div class="sectionTwo__content--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+    <div class="partnersSection__logo">
+      <img src="images/Companies/Google.svg" alt="Google" class="responsive-image">
+      <img src="images/Companies/Microsoft.svg" alt="Microsoft" class="responsive-image">
+      <img src="images/Companies/Airbnb.svg" alt="Airbnb" class="responsive-image">
+      <img src="images/Companies/Facebook.svg" alt="Facebook" class="responsive-image">
+      <img src="images/Companies/Spotify.svg" alt="Spotify" class="responsive-image">
     </div>
-    <div class="sectionTwo__logo">
-      <img src="images/Companies/Google.svg" alt="" class="responsive-image">
-      <img src="images/Companies/Microsoft.svg" alt="" class="responsive-image">
-      <img src="images/Companies/Airbnb.svg" alt="" class="responsive-image">
-      <img src="images/Companies/Facebook.svg" alt="" class="responsive-image">
-      <img src="images/Companies/Spotify.svg" alt="" class="responsive-image">
-    </div>
-    <button class="sectionTwo__btn dark-btn">Learn more</button>
-  </div>
-
-  <div class="sectionThree container grid">
-    <img src="images/Home/image-2.svg" alt="" class="sectionThree__left responsive-image">
-    <div class="sectionThree__right flex">
-      <div class="sectionThree__right--title common-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div class="sectionThree__right--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eius et dolor sunt quo, obcaecati fugit sequi?
+    <button class="partnersSection__btn dark-btn">Learn more</button>
+  </section>
+  
+  <section class="primarySection container grid">
+    <img src="images/Home/image-2.svg" alt="" class="primarySection__left responsive-image">
+    <div class="primarySection__right flex">
+      <h2 class="primarySection__right--title common-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <p class="primarySection__right--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eius et dolor sunt quo, obcaecati fugit sequi?
         Atque ipsum assumenda sequi dicta, error, natus vitae delectus maxime qui mollitia quis dolore necessitatibus autem 
-        accusamus blanditiis?</div>
-      <button class="sectionThree__right--btn dark-btn">learn more</button>
+        accusamus blanditiis?</p>
+      <button class="primarySection__right--btn dark-btn">learn more</button>
     </div>
-  </div>
-
-  <div class="sectionFour container grid">
-    <div class="sectionFour__right flex">
-      <div class="sectionFour__right--title common-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-      <div class="sectionFour__right--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eius et dolor sunt quo, obcaecati fugit sequi?
+  </section>
+  
+  <section class="secondarySection container grid">
+    <div class="secondarySection__right flex">
+      <h2 class="secondarySection__right--title common-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <p class="secondarySection__right--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eius et dolor sunt quo, obcaecati fugit sequi?
         Atque ipsum assumenda sequi dicta, error, natus vitae delectus maxime qui mollitia quis dolore necessitatibus autem 
-        accusamus blanditiis?</div>
-      <button class="sectionFour__right--btn dark-btn">learn more</button>
+        accusamus blanditiis?</p>
+      <button class="secondarySection__right--btn dark-btn">learn more</button>
     </div>
-    <img src="images/Home/image-3.svg" alt="" class="sectionFour__left responsive-image">
-  </div>
-
-  <div class="sectionFive container">
-    <div class="sectionFive__content text-center flex">
-      <div class="sectionFive__content--label label text-green">team</div>
-      <div class="sectionFive__content--title common-title">Our talents</div>
-      <div class="sectionFive__content--text">Lorem ipsum, dolor sit amet consectetur
-        Suscipit nemo hic quos, ab</div>
+    <img src="images/Home/image-3.svg" alt="" class="secondarySection__left responsive-image">
+  </section>
+  
+  <section class="teamSection container">
+    <div class="teamSection__content text-center flex">
+      <div class="teamSection__content--label label text-green">teamSection</div>
+      <h2 class="teamSection__content--title common-title">Our talents</h2>
+      <p class="teamSection__content--text">Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab</p>
     </div>
-    <div class="sectionFive__cards">
-      <div class="sectionFive__cards--1">
-        <img src="images/team/Peg_Legge.svg" alt="" class="responsive-image">
+    <div class="teamSection__cards">
+      <article class="teamSection__cards--1">
+        <img src="images/teamSection/Peg_Legge.svg" alt="Peg Legge" class="responsive-image">
         <div class="name">Peg Legge</div>
         <div class="position">CEO</div>
-      </div>
-      <div class="sectionFive__cards--2">
-        <img src="images/team/Richard.svg" alt="" class="responsive-image">
+      </article>
+      <article class="teamSection__cards--2">
+        <img src="images/teamSection/Richard.svg" alt="Richard Guerra" class="responsive-image">
         <div class="name">Richard Guerra</div>
         <div class="position">CTO</div>
-      </div>
-      <div class="sectionFive__cards--3">
-        <img src="images/team/Alexandra.svg" alt="" class="responsive-image">
+      </article>
+      <article class="teamSection__cards--3">
+        <img src="images/teamSection/Alexandra.svg" alt="Alexandra Stolz" class="responsive-image">
         <div class="name">Alexandra Stolz</div>
         <div class="position">DESIGNER</div>
-      </div>
-      <div class="sectionFive__cards--4">
-        <img src="images/team/Janet.svg" alt="" class="responsive-image">
+      </article>
+      <article class="teamSection__cards--4">
+        <img src="images/teamSection/Janet.svg" alt="Janet Bray" class="responsive-image">
         <div class="name">Janet Bray</div>
         <div class="position">DEVELOPER</div>
-      </div>
+      </article>
     </div>
-    <button class="sectionFive__btn dark-btn">view team</button>
-  </div>
-
-  <div class="footerWrapper">
+    <button class="teamSection__btn dark-btn">view teamSection</button>
+  </section>
+  
+  <footer class="footerWrapper">
     <div class="footerLinks container">
       <div class="footerLinks__socials">
-        <img src="images/socials/facebook.svg" alt="">
-        <img src="images/socials/instagram.svg" alt="">
-        <img src="images/socials/twitter.svg" alt="">
-        <img src="images/socials/pinterest.svg" alt="">
-        <img src="images/socials/tiktok.svg" alt="">
-        <img src="images/socials/whatsapp.svg" alt="">
-        <img src="images/socials/youtube.svg" alt="">
+        <img src="images/socials/facebook.svg" alt="Facebook">
+        <img src="images/socials/instagram.svg" alt="Instagram">
+        <img src="images/socials/twitter.svg" alt="Twitter">
+        <img src="images/socials/pinterest.svg" alt="Pinterest">
+        <img src="images/socials/tiktok.svg" alt="TikTok">
+        <img src="images/socials/whatsapp.svg" alt="WhatsApp">
+        <img src="images/socials/youtube.svg" alt="YouTube">
       </div>
       <div class="footerLinks__copyright text-white text-center">© Start, 2022. All rights reserved.</div>
     </div>
+  </footer>
   
-  </div>
   
 </body>
   <script src="main.js"></script>
